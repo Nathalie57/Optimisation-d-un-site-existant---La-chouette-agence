@@ -1,0 +1,28 @@
+{
+  "name": "la-chouette-agence",
+  "version": "1.0.0",
+  "description": "La chouette agence",
+  "main": "index.js",
+  "scripts": {
+    "minifyCss": "node ./node_modules/gulp/bin/gulp.js minifyCss",
+    "minifyJs": "node ./node_modules/gulp/bin/gulp.js minifyJs",
+    "watch": "node ./node_modules/gulp/bin/gulp.js watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nathalie57/Projet-4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nathalie57/Projet-4/issues"
+  },
+  "homepage": "https://github.com/Nathalie57/Projet-4#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "^3.1.0"
+  }
+}
