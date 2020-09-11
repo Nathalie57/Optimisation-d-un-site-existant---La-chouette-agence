@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nathalie57.github.io/Projet-4/sitemap.xml
+Sitemap: https://nathalie57.github.io/dw-projet-4/sitemap.xml
