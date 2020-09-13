@@ -7,10 +7,34 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.social {
+    color: black;
+}
+
+.btn-width {
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+}
+
+.container.bloc-lg-center {
+    display: flex;
+    justify-content: center;
+}
+
+form#form_1 {
+    text-align: left;
+    margin-right: 2.6rem;
+    margin-left: 2rem;
+}
+
 a,
 button {
     transition: all .3s ease-in-out;
     outline: none!important;
+    text-decoration: none;
 }
 
 a:hover {
@@ -284,7 +308,8 @@ a:hover {
 }
 
 #bloc-1-hero h1 {
-    font-size: 32px;
+    font-size: 35px;
+    font-weight: bold;
 }
 
 .navbar {
@@ -508,6 +533,8 @@ button {
 .form-control {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
+    width: 100%;
+    margin-bottom: 1.5rem;
 }
 
 .scrollToTop {
@@ -678,11 +705,14 @@ a {
 
 p {
     font-size: 11px;
+    margin-top: 2rem;
+    text-align: center;
 }
 
 .tight-width-whitespace {
     max-width: 600px;
-    margin: auto auto auto auto;
+    margin: auto;
+    font-size: 15px;
 }
 
 .h1 {
@@ -716,6 +746,10 @@ h3 {
     color: #333333!important;
 }
 
+blockquote p {
+    font-size: 1.5rem;
+}
+
 .med-width-whitespace {
     max-width: 800px;
     margin: auto auto auto auto;
@@ -736,7 +770,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: #000000!important;
 }
 
 .portfolio-thumb {
@@ -775,12 +809,14 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #ffffff!important;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF!important;
+    background: #f3976c;
+    color: #000000!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -818,7 +854,8 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/la-chouette-agence-banniere-475.jpg");
+    text-align: center;
 }
 
 .bg-presentation {
@@ -837,6 +874,13 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
+
+    .navbar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 3rem;
+    }
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
@@ -851,6 +895,12 @@ h4 {
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
+    }
+    .navbar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 5rem;
     }
 }
 
@@ -872,10 +922,7 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: 0;
-        padding-right: 0;
-    }
+    
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -884,8 +931,7 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: 0;
-        padding-right: 0;
+      
     }
 }
 
@@ -908,6 +954,8 @@ h4 {
     .b-parallax {
         background-attachment: scroll;
     }
+    
+
     .navbar .nav {
         padding-top: 0;
         border-top: 1px solid rgba(0, 0, 0, .2);
@@ -976,6 +1024,7 @@ h4 {
     .bloc {
         padding-left: 0;
         padding-right: 0;
+        text-align: center;
     }
     .bloc-xxl,
     .bloc-xl,
@@ -1016,16 +1065,17 @@ h4 {
     .close-lightbox {
         display: inline-block;
     }
-    .blocsapp-iphone5 {
+    .blocsapp-device-iphone5 {
         background-size: 216px 425px;
         padding-top: 60px;
         width: 216px;
         height: 425px;
     }
-    .blocsapp-iphone5 img {
+    .blocsapp-device-iphone5 img {
         width: 180px;
         height: 320px;
     }
+    
 }
 
 @media (max-width: 400px) {
@@ -1033,10 +1083,39 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
+    
 }
 
 @media (max-width: 767px) {
     .bloc-mob-center-text {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+    .bg-banniere {
+        background-image: url("img/la-chouette-agence-banniere-400.jpg");
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .bg-banniere {
+        background-image: url("img/la-chouette-agence-banniere.jpg");
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 2560px) {
+    .bg-banniere {
+        background-image: url("img/la-chouette-agence-banniere.jpg");
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .bg-banniere {
+        background-image: url("img/la-chouette-agence-banniere-3000.jpg");
         text-align: center;
     }
 }
